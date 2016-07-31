@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>我的电影</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/wap.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+</head>
+
+<body ng-app="myMovie">
+<div class="top">
+  <div class="header" ng-controller='searchController'>
+    <a href="#/home_page" style="line-height: 60px;text-align: center;font-size: 32px;color: #00a0d2">myMovie</a>
+    <div class="search">
+      <form ng-submit='search()'>
+        <input ng-model="query" class="my-input" type="text" placeholder="电影搜索">
+      </form>
+      <button ng-click="search()">搜索</button>
+    </div>
+  </div>
+  <nav class="nav">
+    <ul>
+      <!--li中添加 active 类样式，显示焦点状态。-->
+      <li auto-active><a href="#/home_page">首页</a></li>
+      <li auto-active><a href="#/in_theaters">正在热映</a></li>
+      <li auto-active><a href="#/coming_soon">即将上映</a></li>
+      <li auto-active><a href="#/top250">Top250</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="container">
+  <!--路由模块的内容-->
+  <div ng-view></div>
+  <!--其他-->
+</div>
+<footer class="footer">
+  <div class="container">
+    <p>版权所有&copy;frank</p>
+  </div>
+</footer>
+<!-- 百各庄 -->
+<script src="assets/js/prefixfree.min.js"></script>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../node_modules/angular-route/angular-route.js"></script>
+<script src='./dist/all.js'></script>
+</body>
+
+</html>
