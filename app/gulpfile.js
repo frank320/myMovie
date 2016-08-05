@@ -1,5 +1,5 @@
 /**
- * Created by Frank on 2016/7/31.
+ * Created by Frank.
  */
 var gulp = require('gulp');
 var concat = require('gulp-concat');

@@ -1,5 +1,5 @@
 /**
- * Created by Frank on 2016/7/30.
+ * Created by Frank.
  */
 (function (angular) {
   'use strict';

@@ -1,4 +1,19 @@
-<div class="list">
-  <!-- 首页就是一张图片 -->
-  <img src="assets/img/home_page.png" alt="">
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div ng-repeat="item in data.subjects" class="swiper-slide">
+     <a href="#/details/{{item.id}}">
+       <img ng-src="{{item.images.large}}" alt="">
+     </a>
+   </div>
+  <!--  <div class="swiper-slide">1</div>
+  <div class="swiper-slide">2</div>
+  <div class="swiper-slide">3</div> -->
+  </div>
+  <!-- 如果需要分页器 -->
+  <div class="swiper-pagination"></div>
+
+  <!-- 如果需要导航按钮 -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
+

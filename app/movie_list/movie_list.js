@@ -1,5 +1,5 @@
 /**
- * Created by Frank on 2016/7/29.
+ * Created by Frank .
  */
 (function (angular) {
   'use strict'
@@ -42,11 +42,6 @@
           // 一旦改变，就会重新匹配规则。
           $route.updateParams({page: nowPage});
         };
-
-
-        // $http.get('./in_theaters/in_theaters.json').then(function (response) {
-        //   $scope.data = response.data
-        // })
 
         // angular的jsonp跨域,不是说angular是jsonp方法有问题，只是豆瓣不支持这种有.的形式。
         // $http.jsonp('http://api.douban.com/v2/movie/in_theaters?callback=JSON_CALLBACK')
